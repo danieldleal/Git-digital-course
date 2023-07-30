@@ -5,7 +5,7 @@ Date    = 25.01.2023
 _____________________________________________________________________
 Description:
 Script to auto-name determine finishes in Room_Schedule
-This is a script based on EF template that.
+This is a script was based on EF template, provided by Erik Frits on GitHub.
 _____________________________________________________________________
 How-to:
 -> Click on the button
@@ -73,9 +73,11 @@ app     = __revit__.Application
 # ╚═╝╩═╝╩ ╩╚═╝╚═╝ CLASS
 #====================================================================
 
+
 class NameRooms():
     def __init__(self):
         self.start(title=__title__, version=__doc__)
+        
 
     def get_selected_elements(self):
         """Get Selected Views or let user select Views from a list."""
@@ -85,7 +87,7 @@ class NameRooms():
             forms.alert('No Rooms were selected, \nPlease Try Again', exitscript=True, title=__title__)
 
         return selected_rooms
-
+    
     def naming_element(self):
         """Function to name selected Views."""
         with ef_Transaction(doc,__title__):
