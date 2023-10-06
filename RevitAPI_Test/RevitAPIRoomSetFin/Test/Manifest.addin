@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+<AddIn Type="Command">
+	<Name>Command</Name>
+	<Assembly>Test.dll</Assembly>
+	<AddInId>4EA5A935-D639-4B28-BFCD-955FAED47F4A</AddInId>
+	<FullClassName>Test.Command</FullClassName>
+	<Text>Command</Text>
+	<Description>Get the Id from an element</Description>
+	<VendorId>Danieldleal</VendorId>
+	<VendorDescription>@danieldleal</VendorDescription>
+	<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+</AddIn>
+<AddIn Type="ExternalApplication">
+	<Name>IExternalApplication</Name>
+	<Assembly>Test.dll</Assembly>
+	<AddInId>7FAB2F47-6306-46FE-AD2C-6484AA459D63</AddInId>
+	<FullClassName>Test.IExternalApplication</FullClassName>
+	<Text>IExternalApplication</Text>
+	<Description>Add a panel in the UI</Description>
+	<VendorId>Danieldleal</VendorId>
+	<VendorDescription>@danieldleal</VendorDescription>
+	<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+</AddIn>
+<AddIn Type="Panel">
+	<Name>Panel</Name>
+	<Assembly>Test.dll</Assembly>
+	<AddInId>1892ABF0-DAFB-4048-B7E5-2666D3D81376"</AddInId>
+	<FullClassName>Test.Panel</FullClassName>
+	<Text>Panel</Text>
+	<Description>Data binding related to the UI</Description>
+	<VendorId>Danieldleal</VendorId>
+	<VendorDescription>@danieldleal</VendorDescription>
+	<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+</AddIn>
+</RevitAddIns>

@@ -1,0 +1,4 @@
+C:\Users\danieldleal0\Documents\Revit_API\RevitAPI_Test\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\danieldleal0\Documents\Revit_API\RevitAPI_Test\Test\Test\obj\Debug\Panel.g.cs
+C:\Users\danieldleal0\Documents\Revit_API\RevitAPI_Test\Test\Test\obj\Debug\Test_MarkupCompile.cache
+C:\Users\danieldleal0\Documents\Revit_API\RevitAPI_Test\Test\Test\obj\Debug\Test_MarkupCompile.lref

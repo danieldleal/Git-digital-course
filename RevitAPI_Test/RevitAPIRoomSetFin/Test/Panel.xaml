@@ -1,0 +1,43 @@
+﻿<Window x:Name="SetRoomFinishes" x:Class="Test.Panel" Title="Set Room Finishes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Test"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="310" Loaded="Set_RoomFinishes">
+    <Grid x:Name="Grids" Margin="0,0,0,-6" HorizontalAlignment="Center" Width="311">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <!-- Available Rooms-->
+        <Label x:Name="RoomAvailable" HorizontalAlignment="Center" Content="Available rooms in the project" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Width="183" Margin="0,47,0,51"/>
+        <ComboBox Name="available_rooms" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="20" Margin="0,69,0,0" SelectionChanged="ComboBox_SelectionChanged"/>
+        <!-- Room Constraints-->
+        <Label x:Name="RoomConstraints" HorizontalAlignment="Center" Content="Room Constraints" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="22" Width="117" Grid.RowSpan="2" Margin="0,101,0,0"/>
+        <Label x:Name="RC_UpperLimit" HorizontalAlignment="Left" Margin="25,11,0,0" Content="a) Upper Limit" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="184" Grid.Row="1"/>
+        <TextBox Name="SetRC_UpperLimit" HorizontalAlignment="Left" Margin="136,14,0,0" TextWrapping="Wrap" Text="UpperLimit" VerticalAlignment="Top" Width="156" TextChanged="UpperLimitSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="1" Height="17"/>
+        <Label x:Name="RC_LimitOffset" HorizontalAlignment="Left" Margin="25,39,0,0" Content="b) Limit Offset" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="22" Width="184" Grid.Row="1"/>
+        <TextBox Name="SetRC_LimitOffset" HorizontalAlignment="Left" Margin="136,41,0,0" TextWrapping="Wrap" Text="LimitOffset" VerticalAlignment="Top" Width="156" TextChanged="LimitOffsetSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="1" Height="18"/>
+        <Label x:Name="RC_BaseOffset" HorizontalAlignment="Left" Margin="25,69,0,0" Content="c) Base Offset" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="184" Grid.Row="1"/>
+        <TextBox Name="SetRC_BaseOffset" HorizontalAlignment="Left" Margin="136,72,0,0" TextWrapping="Wrap" Text="BaseOffset" VerticalAlignment="Top" Width="156" TextChanged="BaseOffsetSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="1" Height="17"/>
+        <!-- Room Finishes-->
+        <Label x:Name="RoomFinishes" HorizontalAlignment="Center" Content="Room Finishes" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="92" Grid.Row="1" Margin="0,101,0,0" Grid.RowSpan="2"/>
+        <Label x:Name="RF_Department" HorizontalAlignment="Left" Margin="25,5,0,0" Content="a) Department" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="184" Grid.Row="2"/>
+        <TextBox Name="SetRF_Department" HorizontalAlignment="Left" Margin="136,8,0,0" TextWrapping="Wrap" Text="Department" Width="156" TextChanged="DepartmentSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="2" Height="17" VerticalAlignment="Top"/>
+        <Label x:Name="RF_BaseFinish" HorizontalAlignment="Left" Margin="25,0,0,148" Content="b) Base Finish" VerticalAlignment="Bottom" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="184" Grid.Row="2"/>
+        <TextBox Name="SetRF_BaseFinish" HorizontalAlignment="Left" Margin="136,0,0,151" TextWrapping="Wrap" Text="BaseFinish" VerticalAlignment="Bottom" Width="156" TextChanged="BaseFinishSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="2" Height="17"/>
+        <Label x:Name="RF_CeilingFinish" HorizontalAlignment="Left" Margin="26,0,0,123" Content="c) Ceiling Finish" VerticalAlignment="Bottom" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="183" Grid.Row="2"/>
+        <TextBox Name="SetRF_CeilingFinish" HorizontalAlignment="Left" Margin="136,0,0,126" TextWrapping="Wrap" Text="CeilingFinish" VerticalAlignment="Bottom" Width="156" TextChanged="CeilingFinishSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="2" Height="17"/>
+        <Label x:Name="RF_WallFinish" HorizontalAlignment="Left" Margin="25,77,0,0" Content="d) Wall Finish" VerticalAlignment="Top" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="184" Grid.Row="2"/>
+        <TextBox Name="SetRF_WallFinish" HorizontalAlignment="Left" Margin="136,80,0,0" TextWrapping="Wrap" Text="WallFinish" VerticalAlignment="Top" Width="156" TextChanged="WallFinishSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="2" Height="17"/>
+        <Label x:Name="RF_FloorFinish" HorizontalAlignment="Left" Margin="25,0,0,77" Content="e) Floor Finish" VerticalAlignment="Bottom" Foreground="#FF545454" IsEnabled="False" FontFamily="Century Gothic" Cursor="None" Height="23" Width="184" Grid.Row="2"/>
+        <TextBox Name="SetRF_FloorFinish" HorizontalAlignment="Left" Margin="136,0,0,80" TextWrapping="Wrap" Text="FloorFinish" VerticalAlignment="Bottom" Width="156" TextChanged="FloorFinishSet" FontSize="10" FontFamily="Century Gothic" BorderBrush="#FF484848" Grid.Row="2" Height="17"/>
+
+        <ProgressBar HorizontalAlignment="Left" Height="13" Margin="30,131,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" ValueChanged="ProgressBar_ValueChanged"/>
+        <Button Name="SetParametersNow" Content="Apply" HorizontalAlignment="Left" Margin="30,162,0,0" Grid.Row="2" VerticalAlignment="Top" Click="ApplyButton_Click" FontFamily="Century Gothic" Width="98" FontSize="10"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="194,162,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Button_Click" FontFamily="Century Gothic" Width="98" FontSize="10"/>
+    </Grid>
+</Window>
