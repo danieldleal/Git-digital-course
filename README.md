@@ -1,8 +1,6 @@
 # Revit API for case study
-
-Description:
-Script to auto-name determine finishes in Room_Schedule
-This is a script was based on EF template that.
+Script to automate naming Room instance parameters.
+This is a script was based on EF template, by Erik Frits.
 
 Commit 10/6/2023
 This is a second solution to SetRoomParameters-command, however, written in C#, WPF, XAML; and based on a real team struggle.
